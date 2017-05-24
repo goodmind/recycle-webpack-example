@@ -1,0 +1,50 @@
+{
+  "name": "recycle-webpack-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config config/webpack/index.js",
+    "build:prod": "cross-env NODE_ENV=production npm run build",
+    "build:vendor": "webpack --config ./config/webpack/vendor.js",
+    "start": "node build/server.js",
+    "start:dev": "webpack-dev-server",
+    "start:prod": "cross-env NODE_ENV=production npm run build:vendor & webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodmind/recycle-webpack-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodmind/recycle-webpack-example/issues"
+  },
+  "homepage": "https://github.com/goodmind/recycle-webpack-example#readme",
+  "devDependencies": {
+    "@types/react": "^15.0.24",
+    "@types/react-dom": "^15.5.0",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babili-webpack-plugin": "0.0.11",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^2.0.3",
+    "tslint": "^5.2.0",
+    "tslint-loader": "^3.5.3",
+    "tslint-react": "^3.0.0",
+    "typescript": "^2.3.3",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "most": "^1.3.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "recycle": "^2.2.1",
+    "rxjs": "^5.4.0",
+    "xstream": "^10.8.0"
+  }
+}

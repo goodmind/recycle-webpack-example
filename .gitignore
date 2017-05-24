@@ -1,0 +1,22 @@
+# Dependency directory
+build
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# OS X
+.DS_STORE
+
+# TypeScript
+typings
+typings.json
+
+# JetBrains
+.idea
+
+# Visual Studio Code
+.vscode
