@@ -1,4 +1,5 @@
 declare module 'recycle' {
+  // TODO: augment for different streams or wait for HKTs (unlikely)
   type GenericStream<T> = any
 
   interface Listener {
@@ -11,6 +12,7 @@ declare module 'recycle' {
 
   interface RecycleComponent<P, S> {
     initialState: S
+    // TODO: generic sources
     update (sources: RecycleSources): GenericStream<any>[]
     view (props: P, state: S): React.ReactElement<P>
   }

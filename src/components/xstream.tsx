@@ -17,7 +17,7 @@ const Timer = recycle<Props, State>({
   },
 
   update (sources) {
-    // SHOULD BE CONVERTED AUTOMATICALLY
+    // TOOD: SHOULD BE CONVERTED AUTOMATICALLY
     const listener = sources.select('button').addListener('onClick')
 
     return [
